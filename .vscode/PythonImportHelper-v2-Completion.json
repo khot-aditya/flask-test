@@ -1,0 +1,46 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "hello_world",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def hello_world():\n    return \"Hello, World!\"\n@app.route(\"/about\")\ndef about():\n    return \"About Page\"\n@app.route(\"/greet/\")\n@app.route(\"/greet/<name>\")\ndef greet(name=None):\n    if name:\n        return \"Hello \" + name",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def about():\n    return \"About Page\"\n@app.route(\"/greet/\")\n@app.route(\"/greet/<name>\")\ndef greet(name=None):\n    if name:\n        return \"Hello \" + name\n    else:\n        return \"Missing parameter: Please provide a name.\"\nif __name__ == \"__main__\":",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def greet(name=None):\n    if name:\n        return \"Hello \" + name\n    else:\n        return \"Missing parameter: Please provide a name.\"\nif __name__ == \"__main__\":\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/\")\ndef hello_world():\n    return \"Hello, World!\"\n@app.route(\"/about\")\ndef about():\n    return \"About Page\"\n@app.route(\"/greet/\")\n@app.route(\"/greet/<name>\")\ndef greet(name=None):",
+        "detail": "app",
+        "documentation": {}
+    }
+]
